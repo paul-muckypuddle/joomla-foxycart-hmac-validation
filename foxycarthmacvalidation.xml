@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system">
+	<name>plg_system_foxycarthmacvalidation</name>
+	<author>Mucky Puddle</author>
+	<creationDate>December 2014</creationDate>
+	<copyright>Copyright (C) 2014 Mucky Puddle</copyright>
+	<authorEmail>admin@muckypuddle.com</authorEmail>
+	<authorUrl>www.muckypuddle.com</authorUrl>
+	<version>0.0.1</version>
+	<description>PLG_SYSTEM_FOXYCARTHMACVALIDATION_XML_DESCRIPTION</description>
+	<files>
+        <filename plugin="foxycarthmacvalidation">foxycarthmacvalidation.php</filename>
+        <filename>foxycart.cart_validation.php</filename>
+        <filename>index.html</filename>
+        <filename>foxycarthmacvalidation.xml</filename>
+        <folder>language</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_foxycarthmacvalidation.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_foxycarthmacvalidation.sys.ini</language>
+    </languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="cartUrl" type="text" description="PLG_SYSTEM_FOXYCARTHMACVALIDATION_CARTURL_DESC" label="PLG_SYSTEM_FOXYCARTHMACVALIDATION_CARTURL_LABEL" />
+				
+                <field name="secret" type="text" description="PLG_SYSTEM_FOXYCARTHMACVALIDATION_SECRET_DESC" label="PLG_SYSTEM_FOXYCARTHMACVALIDATION_SECRET_LABEL" />
+
+                <field name="debug" type="radio" default="0" class='btn-group btn-group-yesno' label="PLG_SYSTEM_FOXYCARTHMACVALIDATION_DEBUG_LABEL" description="PLG_SYSTEM_FOXYCARTHMACVALIDATION_DEBUG_DESC">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
