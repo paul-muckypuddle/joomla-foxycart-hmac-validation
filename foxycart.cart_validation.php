@@ -73,7 +73,7 @@ class FoxyCart_Helper {
 	public static function setDebug($isDebug) {
 		self::$debug = $isDebug;
 	}
-	public static function getCartUrl() {
+	public static function getDebug() {
 		return self::$debug;
 	}
 	

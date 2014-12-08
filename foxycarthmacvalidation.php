@@ -21,10 +21,10 @@ class plgSystemFoxycarthmacvalidation extends JPlugin {
 		$this->loadLanguage();
 	}
 	
-	function onBeforeRender() {
+	function onAfterRender() {
 		$app = JFactory::getApplication();
 
-		$isDebug = !!$this->params->get('debug');
+		$isDebug = $this->params->get('debug') == 1 ? true : false;
 		$cartUrl = $this->params->get('cartUrl');
 		$secret = $this->params->get('secret');
 		
@@ -35,7 +35,6 @@ class plgSystemFoxycarthmacvalidation extends JPlugin {
 		FoxyCart_Helper::setSecret($secret);
 		
 		$response = FoxyCart_Helper::fc_hash_html($response);
-		
 		JResponse::setBody($response);
 		return true;
 	}
