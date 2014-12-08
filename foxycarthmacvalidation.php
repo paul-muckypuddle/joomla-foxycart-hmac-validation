@@ -30,7 +30,7 @@ class plgSystemFoxycarthmacvalidation extends JPlugin {
 		
 		$response = JResponse::getBody();
 
-		FoxyCart_Helper::setDebug($isDebug)
+		FoxyCart_Helper::setDebug($isDebug);
 		FoxyCart_Helper::setCartUrl($cartUrl);		
 		FoxyCart_Helper::setSecret($secret);
 		
