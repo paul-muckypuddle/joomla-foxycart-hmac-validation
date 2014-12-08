@@ -3,11 +3,8 @@ joomla-foxycart-hmac-validation
 
 A system plugin to apply HMAC validation to FoxyCart links in Joomla 3+ - find out more in the [FoxyCart docs](https://wiki.foxycart.com/v/2.0/hmac_validation).
 
-* Filter content by one or more tags
-* Filter content by one or more content types (article, category, weblink...)
-* Limit max number of content items shown
-* Choose between matching all or any of the selected tags
-* Order results by title, creation or modification date, in either direction
+* Uses Foxycart HMAC include to process all links and forms
+* Change the store URL without touching code
 
 Installation
 ------------
@@ -15,6 +12,13 @@ Installation
 2. Login to Joomla administrator area, then click **Extensions** > **Extensions Manager**.
 4. Select **Upload Package File**, browse to the zip, then click **Upload and Install**.
 5. And you're done.
+
+Configuration
+------- 
+1. Enable HMAC verification in your Foxycart store admin
+2. Take a note of your API key to enter as the secret in the plugin options
+3. Make sure any product links / forms you want processed have a **code** query string parameter (e.g. 'mysite.foxycart.com/cart?code=MYPRODUCT001&name=...')
+4. Set the plugin options listed below in  **Extensions** > **Plugin Manager** > **System - Foxycart HMAC Validation**.
 
 Options
 ------- 
