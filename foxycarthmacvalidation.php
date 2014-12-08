@@ -23,7 +23,9 @@ class plgSystemFoxycarthmacvalidation extends JPlugin {
 	
 	function onAfterRender() {
 		$app = JFactory::getApplication();
-
+		if($app->isAdmin())
+			return true;
+		
 		$isDebug = $this->params->get('debug') == 1 ? true : false;
 		$cartUrl = $this->params->get('cartUrl');
 		$secret = $this->params->get('secret');
