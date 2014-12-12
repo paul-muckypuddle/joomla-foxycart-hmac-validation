@@ -26,6 +26,10 @@ Options
 * **Foxycart Secret**: Your Foxycart store secret (API key)
 * **Debug**: Whether or not Foxycart link-signing debug mode should be enabled (useful for testing, should be disabled in production)
 
+Gotchas / FAQ
+-------
+* Make sure that this plugin runs last - i.e in Joomla, set the order of this plugin to be after all other system plugins.
+
 Credits
 -------
 Joomla plugin skeleton from [cppl](https://github.com/cppl/Skeleton-Plugin-for-Joomla).
