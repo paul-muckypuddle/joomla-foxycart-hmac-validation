@@ -22,7 +22,7 @@ Configuration
 
 Options
 ------- 
-* **Cart URL**: Your FoxyCart URL, typically 'https://YOURSTORE.foxycart.com' or 'https://checkout.YOURDOMAIN.com'
+* **Cart URL**: Your FoxyCart URL, typically 'https://YOURSTORE.foxycart.com/cart' or 'https://checkout.YOURDOMAIN.com/cart'
 * **Foxycart Secret**: Your Foxycart store secret (API key)
 * **Debug**: Whether or not Foxycart link-signing debug mode should be enabled (useful for testing, should be disabled in production)
 
